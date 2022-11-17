@@ -5,7 +5,7 @@ public class ContaBancariaFactory {
 
     private static Map<String, ContaBancaria> contas = new HashMap<>();
 
-    public static ContaBancaria getCidade(String banco, String codigo) {
+    public static ContaBancaria getContaBancaria(String banco, String codigo) {
         ContaBancaria conta = contas.get(banco);
         if (conta == null) {
             conta = new ContaBancaria(banco, codigo);

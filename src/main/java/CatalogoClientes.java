@@ -6,7 +6,7 @@ public class CatalogoClientes {
     private List<Cliente> clientes = new ArrayList<>();
 
     public void cadastrar(String nome, String banco, String codigo) {
-        ContaBancaria conta = ContaBancariaFactory.getCidade(banco, codigo);
+        ContaBancaria conta = ContaBancariaFactory.getContaBancaria(banco, codigo);
         Cliente cliente = new Cliente(nome, conta);
         clientes.add(cliente);
     }
